@@ -1,5 +1,5 @@
 <?php
-    $title = 'for Loop';
+    $title = 'while Loop';
 
     $favoriteGuitars = [
         'Vela',
@@ -48,16 +48,12 @@
       <table class="table table-striped mt-5">
       <?php
 
-        for($i = 0; $i < count($favoriteGuitars); $i++)
+        $i = 0;
+        while($i < count($favoriteGuitars))
         {
-          $guitar = $favoriteGuitars[$i];
-          
-          echo "<tr><td>$guitar</td></tr>";
-        }
-
-        foreach($favoriteGuitars as $guitar)
-        {
+            $guitar = $favoriteGuitars[$i];
             echo "<tr><td>$guitar</td></tr>";
+            $i++;
         }
 
       ?>

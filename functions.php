@@ -1,17 +1,13 @@
 <?php
-    $title = 'for Loop';
+    $title = 'while Loop';
 
-    $favoriteGuitars = [
-        'Vela',
-        'Explorer',
-        'Strat'
-    ];
+    function sum($a,$b)
+    {
+        $result = $a + $b;
+        return $result;
+    }
 
-          $kvpGuitars = [
-        'prs' => 'Vela',
-        'gibson' => 'Explorer',
-        'fender' => 'Strat'
-    ];
+    $result = sum(1,2);
 ?>
 <?php
 
@@ -48,17 +44,7 @@
       <table class="table table-striped mt-5">
       <?php
 
-        for($i = 0; $i < count($favoriteGuitars); $i++)
-        {
-          $guitar = $favoriteGuitars[$i];
-          
-          echo "<tr><td>$guitar</td></tr>";
-        }
-
-        foreach($favoriteGuitars as $guitar)
-        {
-            echo "<tr><td>$guitar</td></tr>";
-        }
+        
 
       ?>
       </table>
